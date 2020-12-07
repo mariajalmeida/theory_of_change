@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.post_it, .yellow, .green, .red {
+	padding: 25px 15px;
+	-webkit-box-shadow: 0 8px 10px -7px #999;
+	-moz-box-shadow: 0 8px 10px -7px #999;
+	box-shadow: 0 8px 10px -7px #999;
+	-webkit-border-bottom-right-radius: 60px 10px;
+	-moz-border-radius-bottom-right: 60px 10px;
+	border-bottom-right-radius: 60px 10px;
+	margin: 10px 5px;
+	width: 200px;
+	position: relative;
+}
+
+.post_it span {
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.post_it span:first-child {
+	position: absolute;
+	bottom: 4%;
+	left: 0;
+	right: 0;
+}
+
+.line {
+	width: 2px;
+	height: 240px;
+	background-color: rgb(15, 15, 15);
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 0;
+	right: 50%;
+}
+
+.post_it span:last-child {
+	position: absolute;
+	right: -5%;
+	bottom: 50%;
+	transform: rotate(270deg);
+}
+
+.concepts .post_it {
+	background-color: rgb(253, 222, 165);
+}
+
+.column > div:not(.concepts):first-child {
+	background-color: #B9EAF6;
+}
+
+.column > div:not(.concepts):first-child, .concepts > div:first-child {
+	height: 240px;
+}
+
+.column_1 .post_it, .yellow, .green, .red {
+	height: 150px;
+}
+
+.yellow {
+	background: #fefabc;
+}
+
+.green {
+	background: #78ddb7;
+}
+
+.red {
+	background-color: rgb(241, 113, 113);
+}
+
+.post_it p:first-child {
+	border-top: 1.2px dotted grey;
+	padding: 15px 25px 0 25px;
+	margin-top: 0;
+}
+
+.post_it {
+	text-align: center;
+}
+
+.post_it p {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.post_it .from {
+	font-weight: 500;
+}
+
+.post_it .to, .concepts .post_it {
+	font-weight: 900;
+}
